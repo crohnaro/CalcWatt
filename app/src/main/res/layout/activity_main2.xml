@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/principal">
+
+    <TextView
+        android:id="@+id/textoprincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Estado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/cidadesescolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textoprincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/kwmesanterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cidadesescolha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Digite o valor em KW/H do mês anterior"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/hwmesanterior1"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/custon_imput"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/kwmesanterior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite o valor"
+        android:textColorHint="@color/principal">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/kwmesatual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hwmesanterior1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Digite o valor em KW/H do mês atual"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/hwmesatual1"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:background="@drawable/custon_imput"
+        app:layout_constraintTop_toBottomOf="@id/kwmesatual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite o valor"
+        android:textColorHint="@color/principal">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/fazercalculo"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/hwmesatual1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:hint="Fazer Calculo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/principal"
+        >
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
