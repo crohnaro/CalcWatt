@@ -11,13 +11,12 @@
         android:id="@+id/backgroundresultado"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:background="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="100dp"
-        >
-    </View>
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
 
     <TextView
         android:id="@+id/resultado"
@@ -32,6 +31,91 @@
         android:layout_marginTop="150dp"
         android:textStyle="bold">
     </TextView>
+
+    <TextView
+        android:id="@+id/bv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Bandeira Vermelha : "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@id/backgroundresultado"
+        app:layout_constraintTop_toBottomOf="@id/resultado">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Bandeira Amarela : "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@id/backgroundresultado"
+        app:layout_constraintTop_toBottomOf="@id/bv">
+    </TextView>
+
+    <TextView
+        android:id="@+id/bvr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Bandeira Verde : "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@id/backgroundresultado"
+        app:layout_constraintTop_toBottomOf="@id/ba">
+    </TextView>
+
+    <TextView
+        android:id="@+id/bvR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="52dp"
+        android:text="teste "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/bv"
+        app:layout_constraintTop_toBottomOf="@id/resultado"></TextView>
+
+    <TextView
+        android:id="@+id/baR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="52dp"
+        android:text="teste "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/bv"
+        app:layout_constraintTop_toBottomOf="@id/bvR"></TextView>
+
+    <TextView
+        android:id="@+id/bvrR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:text="teste "
+        android:textColor="@color/principal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/bvr"
+        app:layout_constraintTop_toBottomOf="@id/baR"></TextView>
 
     <Button
         android:id="@+id/fazercalculo"
