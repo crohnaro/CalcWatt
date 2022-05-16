@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CalcWatt</string>
+    <string name="bandeira_verde">Bandeira Verde :</string>
+    <string name="teste">teste</string>
+    <string name="teste">teste</string>
+    <string name="teste">teste</string>
+    <string name="nova_consulta">Nova Consulta</string>
+    <string name="bandeira_amarela">Bandeira Amarela :</string>
+    <string name="bandeira_vermelha">Bandeira Vermelha :</string>
+    <string name="resultado">Resultado</string>
+    <string name="selecione_o_estado">Selecione o Estado</string>
+    <string name="digite_o_valor_em_kw_h_do_m_s_anterior">Digite o valor em KW/H do mês anterior</string>
+    <string name="digite_o_valor">Digite o valor</string>
+    <string name="digite_o_valor_em_kw_h_do_m_s_atual">Digite o valor em KW/H do mês atual</string>
+    <string name="digite_o_valor">Digite o valor</string>
+    <string name="fazer_calculo">Fazer Calculo</string>
 </resources>

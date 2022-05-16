@@ -16,13 +16,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></View>
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
 
     <TextView
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado"
+        android:text="@string/resultado"
         android:textSize="30sp"
         android:textColor="@color/principal"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Bandeira Vermelha : "
+        android:text="@string/bandeira_vermelha"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -53,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Bandeira Amarela : "
+        android:text="@string/bandeira_amarela"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -68,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Bandeira Verde : "
+        android:text="@string/bandeira_verde"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -84,12 +86,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="52dp"
-        android:text="teste "
+        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/bv"
-        app:layout_constraintTop_toBottomOf="@id/resultado"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/resultado">
+
+    </TextView>
 
     <TextView
         android:id="@+id/baR"
@@ -97,12 +101,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="52dp"
-        android:text="teste "
+        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/bv"
-        app:layout_constraintTop_toBottomOf="@id/bvR"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/bvR">
+
+    </TextView>
 
     <TextView
         android:id="@+id/bvrR"
@@ -110,12 +116,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="52dp"
-        android:text="teste "
+        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/bvr"
-        app:layout_constraintTop_toBottomOf="@id/baR"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/baR">
+
+    </TextView>
 
     <Button
         android:id="@+id/fazercalculo"
@@ -125,7 +133,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="100dp"
-        android:hint="Nova Consulta"
+        android:hint="@string/nova_consulta"
         android:textSize="18sp"
         android:textStyle="bold"
         android:backgroundTint="@color/white"
