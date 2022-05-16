@@ -51,14 +51,16 @@
         android:id="@+id/hwmesanterior1"
         android:layout_width="350dp"
         android:layout_height="35dp"
-        android:ems="10"
         android:background="@drawable/custon_imput"
+        android:ems="10"
+        android:inputType="number"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/kwmesanterior"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:hint="Digite o valor"
-        android:textColorHint="@color/principal">
+        android:textColorHint="@color/principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kwmesanterior">
 
     </EditText>
 
@@ -81,6 +83,7 @@
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:ems="10"
+        android:inputType="number"
         android:gravity="center"
         android:background="@drawable/custon_imput"
         app:layout_constraintTop_toBottomOf="@id/kwmesatual"
