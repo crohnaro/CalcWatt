@@ -17,8 +17,8 @@ class MainActivity2 : AppCompatActivity() {
 
        option = findViewById(R.id.cidadesescolha) as Spinner
 
-       val options = arrayOf("RJ", "SP")
-       option.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
+       val options = arrayOf("RJ", "SP","MG","ES","AM")
+       option.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, options)
 
         option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
