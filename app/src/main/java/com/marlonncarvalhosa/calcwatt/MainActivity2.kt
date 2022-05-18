@@ -27,7 +27,7 @@ class MainActivity2 : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-
+                val pos = options[position]
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
