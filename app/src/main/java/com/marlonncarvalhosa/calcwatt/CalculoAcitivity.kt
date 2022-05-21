@@ -7,27 +7,28 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 
-class MainActivity2 : AppCompatActivity() {
+class CalculoAcitivity : AppCompatActivity() {
 
-    lateinit var option : Spinner
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-       option = findViewById(R.id.cidadesescolha) as Spinner
+      val spinnerEstados : Spinner = findViewById(R.id.cidadesescolha)
 
        val options = arrayOf("RJ", "SP","MG","ES","AM")
-       option.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, options)
+        val estadosPreço = arrayOf(2, 3, 5, 6, 7)
+       spinnerEstados.adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, options)
 
-        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+        spinnerEstados.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
                 id: Long
             ) {
-                val pos = options[position]
+                val preço = estadosPreço[position]
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {

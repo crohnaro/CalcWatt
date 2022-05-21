@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalcWatt">
         <activity
-            android:name=".MainActivity3"
+            android:name=".ResultadoActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".CalculoAcitivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenCalcWatt"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
