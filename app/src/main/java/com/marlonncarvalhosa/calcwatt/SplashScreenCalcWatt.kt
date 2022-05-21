@@ -7,7 +7,7 @@ import android.os.Handler
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 
-class MainActivity : AppCompatActivity() {
+class SplashScreenCalcWatt : AppCompatActivity() {
     lateinit var handler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,CalculoAcitivity::class.java)
             startActivity(intent)
         }, 3000)
 
