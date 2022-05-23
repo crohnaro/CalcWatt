@@ -81,12 +81,11 @@
     </TextView>
 
     <TextView
-        android:id="@+id/bvR"
+        android:id="@+id/BandeiraVermelha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="52dp"
-        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -96,32 +95,30 @@
     </TextView>
 
     <TextView
-        android:id="@+id/baR"
+        android:id="@+id/BandeiraAmarela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="52dp"
-        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/bv"
-        app:layout_constraintTop_toBottomOf="@id/bvR">
+        app:layout_constraintTop_toBottomOf="@id/BandeiraVermelha">
 
     </TextView>
 
     <TextView
-        android:id="@+id/bvrR"
+        android:id="@+id/BandeiraVerde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="52dp"
-        android:text="@string/teste"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/bvr"
-        app:layout_constraintTop_toBottomOf="@id/baR">
+        app:layout_constraintTop_toBottomOf="@id/BandeiraAmarela">
 
     </TextView>
 
