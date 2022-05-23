@@ -24,6 +24,11 @@ class ResultadoActivity : AppCompatActivity() {
         val BandeiraAmarelaTextView = findViewById<TextView>(R.id.BandeiraAmarela).apply {
             text = BandeiraAmarela
         }
+
+       val btn = findViewById<Button>(R.id.novaconsulta)
+        btn.setOnClickListener(){
+            finish()
+        }
     }
 
 }

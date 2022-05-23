@@ -11,7 +11,7 @@
         android:id="@+id/backgroundresultado"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -24,15 +24,15 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
         android:text="@string/resultado"
-        android:textSize="30sp"
         android:textColor="@color/principal"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="150dp"
-        android:textStyle="bold">
-    </TextView>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <TextView
         android:id="@+id/bv"
@@ -126,18 +126,16 @@
         android:id="@+id/novaconsulta"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        app:layout_constraintTop_toBottomOf="@id/backgroundresultado"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
         android:hint="@string/nova_consulta"
+        android:textColorHint="@color/principal"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:backgroundTint="@color/white"
-        android:textColorHint="@color/principal"
-        >
-    </Button>
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundresultado"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
