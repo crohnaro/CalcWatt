@@ -11,7 +11,7 @@
         android:id="@+id/textoprincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/selecione_o_estado"
+        android:text="Escreva o estado (SIGLA)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,24 +22,30 @@
 
     </TextView>
 
-    <Spinner
-        android:id="@+id/cidadesescolha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textoprincipal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <EditText
+        android:id="@+id/escrevaOEstado"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:background="@drawable/custon_imput"
+        android:ems="10"
+        android:inputType="textCapCharacters"
         android:gravity="center"
-        android:background="@color/white"
-        android:layout_marginTop="10dp"
-        >
-    </Spinner>
+        android:hint="Escreva a Sigla do Estado"
+        android:textColorHint="@color/principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoprincipal">
+
+    </EditText>
+
+
 
     <TextView
         android:id="@+id/kwmesanterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/cidadesescolha"
+        app:layout_constraintTop_toBottomOf="@id/escrevaOEstado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/digite_o_valor_em_kw_h_do_m_s_anterior"
