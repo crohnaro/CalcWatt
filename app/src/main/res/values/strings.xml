@@ -11,4 +11,5 @@
     <string name="digite_o_valor">Digite o valor</string>
     <string name="digite_o_valor_em_kw_h_do_m_s_atual">Digite o valor em KW/H do mês atual</string>
     <string name="fazer_calculo">Fazer Calculo</string>
+    <string name="escreva_o_estado_sigla">Escreva o estado (SIGLA)</string>
 </resources>

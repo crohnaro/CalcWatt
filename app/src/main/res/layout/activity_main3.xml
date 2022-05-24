@@ -44,7 +44,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@id/backgroundresultado"
         app:layout_constraintTop_toBottomOf="@id/resultado">
 
@@ -60,7 +60,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@id/backgroundresultado"
         app:layout_constraintTop_toBottomOf="@id/bv">
     </TextView>
@@ -75,7 +75,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/backgroundresultado"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@id/backgroundresultado"
         app:layout_constraintTop_toBottomOf="@id/ba">
     </TextView>
@@ -126,7 +126,7 @@
         android:id="@+id/novaconsulta"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@color/white"
         android:hint="@string/nova_consulta"
         android:textColorHint="@color/principal"
