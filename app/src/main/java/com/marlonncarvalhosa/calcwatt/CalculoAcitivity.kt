@@ -60,14 +60,14 @@ class CalculoAcitivity : AppCompatActivity() {
         val CalculoBase = CalculokwHora * precoEstado + taxaIluminacaoPublica
         val CalculoAmarelo = calculoBandeiraAmarela * CalculokwHora + taxaIluminacaoPublica
         val CalculoVermelho = calculoBandeiraVermelha * CalculokwHora + taxaIluminacaoPublica
-        val CalculoBaseString = CalculoBase.toString()
-        val CalculoAmarelaString = CalculoAmarelo.toString()
-        val CalculoVermelhoString = CalculoVermelho.toString()
+        val CalculoBaseString = CalculoBase.toFloat().toString()
+        val CalculoAmarelaString = CalculoAmarelo.toFloat().toString()
+        val CalculoVermelhoString = CalculoVermelho.toFloat().toString()
 
         val intent = Intent(this, ResultadoActivity::class.java).also {
-            it.putExtra("Bandeira Verde", CalculoBaseString)
-            it.putExtra("Bandeira Amarela", CalculoAmarelaString)
-            it.putExtra("Bandeira Vermelha", CalculoVermelhoString)
+            it.putExtra("Bandeira Verde","R$ $CalculoBaseString")
+            it.putExtra("Bandeira Amarela", "R$ $CalculoAmarelaString")
+            it.putExtra("Bandeira Vermelha", "R$ $CalculoVermelhoString")
             startActivity(it)
         }
 
@@ -91,13 +91,33 @@ class CalculoAcitivity : AppCompatActivity() {
         } else if (estadoString == "RR") {
             precoEstado = 0.580
         } else if (estadoString == "AP") {
-            precoEstado = 0.594
+            precoEstado = 0.505
         } else if (estadoString == "MA") {
-            precoEstado = 0.594
+            precoEstado = 0.642
         } else if (estadoString == "PI") {
-            precoEstado = 0.594
-        } else {
-            precoEstado = 0.594
+            precoEstado = 0.628
+        } else if (estadoString == "SC") {
+            precoEstado = 0.532
+        } else if (estadoString == "RO") {
+            precoEstado = 0.546
+        } else if (estadoString == "RN") {
+            precoEstado = 0.559
+        } else if (estadoString == "PR") {
+            precoEstado = 0.559
+        } else if (estadoString == "DF") {
+            precoEstado = 0.575
+        } else if (estadoString == "CE") {
+            precoEstado = 0.589
+        } else if (estadoString == "PE") {
+            precoEstado = 0.619
+        } else if (estadoString == "PB") {
+            precoEstado = 0.619
+        } else if (estadoString == "BA") {
+            precoEstado = 0.620
+        } else if (estadoString == "AL") {
+            precoEstado = 0.626
+        } else if (estadoString == "PL") {
+            precoEstado = 0.628
         }
         return precoEstado
     }
