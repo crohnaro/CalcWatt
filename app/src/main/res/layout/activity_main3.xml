@@ -50,6 +50,8 @@
 
     </TextView>
 
+
+
     <TextView
         android:id="@+id/ba"
         android:layout_width="wrap_content"
@@ -64,6 +66,35 @@
         app:layout_constraintStart_toStartOf="@id/backgroundresultado"
         app:layout_constraintTop_toBottomOf="@id/bv">
     </TextView>
+
+    <ImageView
+        android:id="@+id/bandeiraVermelhaIcone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_bandeira_vermelha"
+        app:layout_constraintBottom_toBottomOf="@+id/bv"
+        app:layout_constraintStart_toEndOf="@id/bv"
+        app:layout_constraintTop_toTopOf="@+id/bv" />
+
+    <ImageView
+        android:id="@+id/bandeiraVerdeIcone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_bandeira_verde"
+        app:layout_constraintBottom_toBottomOf="@+id/bvr"
+        app:layout_constraintEnd_toEndOf="@+id/BandeiraAmarelaIcone"
+        app:layout_constraintStart_toStartOf="@+id/BandeiraAmarelaIcone"
+        app:layout_constraintTop_toTopOf="@+id/bvr" />
+
+    <ImageView
+        android:id="@+id/BandeiraAmarelaIcone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_bandeira_amarela"
+        app:layout_constraintBottom_toBottomOf="@+id/ba"
+        app:layout_constraintStart_toStartOf="@+id/bandeiraVermelhaIcone"
+        app:layout_constraintTop_toTopOf="@+id/ba" />
 
     <TextView
         android:id="@+id/bvr"
@@ -84,13 +115,14 @@
         android:id="@+id/BandeiraVermelha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="52dp"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/bv"
-        app:layout_constraintTop_toBottomOf="@id/resultado">
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/bandeiraVermelhaIcone"
+        app:layout_constraintBottom_toBottomOf="@id/bandeiraVermelhaIcone"
+        app:layout_constraintTop_toTopOf="@id/bandeiraVermelhaIcone"
+        >
 
     </TextView>
 
@@ -98,13 +130,14 @@
         android:id="@+id/BandeiraAmarela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="52dp"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/bv"
-        app:layout_constraintTop_toBottomOf="@id/BandeiraVermelha">
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/BandeiraAmarelaIcone"
+        app:layout_constraintBottom_toBottomOf="@id/BandeiraAmarelaIcone"
+        app:layout_constraintStart_toEndOf="@id/BandeiraAmarelaIcone"
+        >
 
     </TextView>
 
@@ -112,13 +145,14 @@
         android:id="@+id/BandeiraVerde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="52dp"
         android:textColor="@color/principal"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/bvr"
-        app:layout_constraintTop_toBottomOf="@id/BandeiraAmarela">
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@id/bandeiraVerdeIcone"
+        app:layout_constraintStart_toEndOf="@id/bandeiraVerdeIcone"
+        app:layout_constraintBottom_toBottomOf="@id/bandeiraVerdeIcone"
+        >
 
     </TextView>
 
